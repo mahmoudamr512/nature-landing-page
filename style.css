@@ -7,6 +7,107 @@
     font-family: "Poppins", sans-serif;
 }
 
+input {
+    /* display: none; */
+    position: absolute;
+    z-index: 3;
+}
+
+
+@media (max-width: 960px) {
+
+    .main-content h2 {
+        font-size: 30px !important;
+    }
+    .main-content h2 span{
+        font-size: 35px !important;
+        color: green !important;
+    }
+
+    .main-content p{
+        font-size: 12px !important;
+        font-weight: bolder !important;
+    }
+    
+    .main-content .info-button {
+        font-size: 9px !important;
+    }
+
+    header nav {
+        display: none;
+    }
+    label {
+        display: block !important;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .logo {
+        top: 10px
+    }
+
+
+
+    label:hover {
+        color: #fff;
+    }
+
+    label .fa-xmark {
+        display: none;
+    }
+
+    #check:checked ~ header nav{
+        position: fixed;
+        z-index: 2;
+        background: rgba(114, 223, 255, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+     #check:checked ~ header nav a {
+         margin: 0;
+         margin-bottom: 50px;
+         font-weight: 700;
+         letter-spacing: 2px;
+     }
+
+     #check:checked ~ header label .fa-bars{
+         display: none;
+         position: absolute;
+     }
+
+     #check:checked ~ header .fa-xmark {
+         display: block;
+         z-index: 2;
+         position: fixed;
+     }
+
+     input {
+         display: none;
+     }
+    
+}
+
+input {
+    display: none;
+}
+label .fa-bars {
+    position: absolute;
+}
+
+label {
+    display: none;
+}
+
 
 section {
     display: flex;
