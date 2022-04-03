@@ -276,7 +276,7 @@ header nav a:hover {
 
 #services {
     background-color: white;
-    margin-top: 60px;
+    margin-top: 120px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -287,4 +287,65 @@ header nav a:hover {
     text-align: center;
     font-size: 2.5em;
     color: #226AB0;
+    margin-bottom: 50px;
+}
+
+.card-content  {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    flex-direction: row;
+    margin: auto;
+}
+
+.card {
+    width: 21.25em;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    box-shadow: 0px 0px 9px rgb(1 1 1 / 50%);
+    box-sizing: content-box;
+    padding: 25px 0px;
+    margin-right: 2.2em;
+    transition: 0.7s ease;
+}
+
+.card p {
+    width: 80%;
+    margin: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card i {
+    color: #71b1f0;
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+.card .card-title {
+    font-size: 2em;
+    color: #71b1f0;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: auto;
+    
+    font-weight: bolder;
+    margin-bottom: 30px;
+
+}
+
+
+.card p {
+    font-weight: 500;
+}
+
+.card span {
+    color: #226AB0;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
